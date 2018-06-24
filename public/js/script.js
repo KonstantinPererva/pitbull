@@ -2,22 +2,38 @@
 $(document).ready(function(){
 
     var swiper = new Swiper('.swiper-stories', {
-        slidesPerView: 7.1,
+        slidesPerView: 7,
         spaceBetween: 30,
         mousewheel: true,
         simulateTouch: false,
+        navigation: {
+            nextEl: '.swiper-arrow__next',
+            prevEl: '.swiper-arrow__prev'
+        },
         breakpoints: {
             1015: {
                 simulateTouch: true,
-                slidesPerView: 5,
-                spaceBetween: 10
+                slidesPerView: 7,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: null,
+                    prevEl: null
+                }
             },
             750: {
-                slidesPerView: 4
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: null,
+                    prevEl: null
+                }
             },
             520: {
                 slidesPerView: 4,
-                spaceBetween: 5
+                spaceBetween: 5,
+                navigation: {
+                    nextEl: null,
+                    prevEl: null
+                }
             }
         }
     });
