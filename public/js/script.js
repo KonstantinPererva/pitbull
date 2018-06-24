@@ -2,13 +2,13 @@
 $(document).ready(function(){
 
     var swiper = new Swiper('.swiper-stories', {
-        slidesPerView: 7,
+        slidesPerView: 6,
         spaceBetween: 30,
         mousewheel: true,
         simulateTouch: false,
         navigation: {
-            nextEl: '.swiper-arrow__next',
-            prevEl: '.swiper-arrow__prev'
+            nextEl: '.swiper-stories-arrow__next',
+            prevEl: '.swiper-stories-arrow__prev'
         },
         breakpoints: {
             1015: {
