@@ -108,21 +108,20 @@
             <div class="main-block fadeInUp wow" data-wow-delay="0.2s">
                 <div class="wrap-news-preview">
                     {foreach from=$main_news item=main_new}
-                    <div class="news-preview">
-                        <div class="news-preview-bg">
-                            <img src="{$main_new.photo}" alt="" />
+                        <div class="news-preview">
+                            <div class="news-preview-bg">
+                                <img src="{$main_new.photo}" alt="news" />
+                            </div>
+                            <div class="news-preview-btn">
+                                <a href="{$main_new.link}" class="glitch-link" data-text="{$main_new.title}">{$main_new.title}</a>
+                            </div>
                         </div>
-                        <div class="news-preview-btn">
-                            <a href="{$main_new.link}" class="glitch-link" data-text="{$main_new.title}">{$main_new.title}</a>
-                        </div>
-                    </div>
                     {/foreach}
                 </div>
-                <a href="" class="video-main" >
+                <div class="video-main">
                     <iframe width="100%" height="100%" src="{$main_video.video}" frameborder="0" allowfullscreen></iframe>
-                </a>
+                </div>
             </div>
-
             
             <div class="wrap-stories wrap-stories-main fadeInUp wow" data-wow-delay="0.2s">
                 <div class="swiper-stories-arrow">

@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-    var swiper = new Swiper('.swiper-stories', {
+    var swiperStories = new Swiper('.swiper-stories', {
         slidesPerView: 6,
         spaceBetween: 30,
         mousewheel: true,
@@ -15,10 +15,7 @@ $(document).ready(function(){
                 simulateTouch: true,
                 slidesPerView: 7,
                 spaceBetween: 10,
-                navigation: {
-                    nextEl: null,
-                    prevEl: null
-                }
+                navigation: false
             },
             750: {
                 slidesPerView: 4,
@@ -37,7 +34,7 @@ $(document).ready(function(){
             }
         }
     });
-    var swiper = new Swiper('.swiper-round', {
+    var swiperRound = new Swiper('.swiper-round', {
         navigation: {
             nextEl: '.swiper-button-next-round',
             prevEl: '.swiper-button-prev-round'
@@ -45,7 +42,7 @@ $(document).ready(function(){
         speed: 500,
         simulateTouch: false
     });
-    var swiper = new Swiper('.swiper-check-in', {
+    var swiperCheckIn = new Swiper('.swiper-check-in', {
         navigation: {
             nextEl: '.swiper-button-next-check-in',
             prevEl: '.swiper-button-prev-check-in'
@@ -72,8 +69,8 @@ $(document).ready(function(){
 
     // mob nav open/close
     $('.open-nav').click(function (e){
-        $('.block-nav').toggleClass('open');
         e.preventDefault();
+        $('.block-nav').toggleClass('open');
     });
     $('.close-nav').click(function (){
         $('.block-nav').removeClass('open');
