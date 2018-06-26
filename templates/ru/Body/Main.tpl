@@ -145,7 +145,7 @@
                                         <img src="{$video.photo}" alt="" />
                                     </span>
                                 </span>
-                                {$video.title}
+                                <span class="stories-item-title">{$video.title}</span>
                             </a>
                         </div>
                         {/foreach}

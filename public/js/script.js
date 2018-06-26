@@ -1,9 +1,7 @@
-
 $(document).ready(function(){
 
     var swiperStories = new Swiper('.swiper-stories', {
         slidesPerView: 6,
-        spaceBetween: 30,
         mousewheel: true,
         simulateTouch: false,
         navigation: {
@@ -11,26 +9,30 @@ $(document).ready(function(){
             prevEl: '.swiper-stories-arrow__prev'
         },
         breakpoints: {
-            1015: {
+            1270: {
                 simulateTouch: true,
-                slidesPerView: 7,
-                spaceBetween: 10,
-                navigation: false
+                slidesPerView: 5
             },
-            750: {
-                slidesPerView: 4,
-                navigation: {
-                    nextEl: null,
-                    prevEl: null
-                }
+            1015: {
+                slidesPerView: 4
             },
-            520: {
-                slidesPerView: 4,
-                spaceBetween: 5,
-                navigation: {
-                    nextEl: null,
-                    prevEl: null
-                }
+            800: {
+                slidesPerView: 3
+            },
+            700: {
+                slidesPerView: 5
+            },
+            640: {
+                slidesPerView: 4
+            },
+            540: {
+                slidesPerView: 3
+            },
+            360: {
+                slidesPerView: 3
+            },
+            340: {
+                slidesPerView: 2
             }
         }
     });
