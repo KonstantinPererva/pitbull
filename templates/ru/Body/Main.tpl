@@ -19,45 +19,45 @@
     <meta property="og:image"         content="https://pit-battle.com/1200.png" />
 
     {literal}
-    	<!-- Facebook Pixel Code -->
-		<script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-		n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t,s)}(window,document,'script',
-		'https://connect.facebook.net/en_US/fbevents.js');
-		 fbq('init', '132992970686706'); 
-		fbq('track', 'PageView');
-		</script>
-		<!-- End Facebook Pixel Code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window,document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '132992970686706'); 
+          fbq('track', 'PageView');
+      </script>
+      <!-- End Facebook Pixel Code -->
 
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-TSJP4H');</script>
-		<!-- End Google Tag Manager -->
-    {/literal}
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TSJP4H');</script>
+  <!-- End Google Tag Manager -->
+  {/literal}
 </head>
 <body>
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0&appId=1689430901150785&autoLogAppEvents=1';
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSJP4H"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0&appId=1689430901150785&autoLogAppEvents=1';
+       fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSJP4H"
+     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="wrapper">
+     <div class="wrapper">
         <div class="container">
 
             <div class="header fadeInUp wow" data-wow-delay="0.2s">
@@ -75,27 +75,15 @@
                                 <!-- <li><a href="#" class="glitch-link" data-text="лучшие панчи">лучшие панчи</a></li>-->
                                 <li><a href="/about/" class="glitch-link" data-text="про pit bull battle">про pit bull battle</a></li>
                                 <li><a href="/rools/" class="glitch-link" data-text="правила">правила</a></li>
-                                <li><a href="/judges.html" class="glitch-link" data-text="Судьи">Судьи</a></li>
-                                {if !isset($social_id)}
-                                <li><a href="javascript:PopUpShow();" class="glitch-link" data-text="Регистрация">Регистрация</a></li>
-                                {else if !isset($user_id)}
-                                <li><a href="/registration/" class="glitch-link" data-text="Регистрация">Регистрация</a></li>
+                                <li><a href="/judges/" class="glitch-link" data-text="Судьи">Судьи</a></li>
+                                <li><a href="/members-otbor2/" class="glitch-link" data-text="Участники">Участники</a></li>
+                                {if !isset($u_id) || $u_id==''}
+                                <li><a href="/auth/" class="glitch-link" data-text="Авторизация">Авторизация</a></li>
                                 {else}
-                                <li><a href="/profile/" class="glitch-link" data-text="Личный кабинет">Личный кабинет</a></li>
+                                <li><a href="/profile/" class="glitch-link" data-text="Кабинет участника">Кабинет участника</a></li>
+                                <li><a href="/logout.php" class="glitch-link" data-text="Выйти">Выйти</a></li>
                                 {/if}
-
-                                {if !isset($social_id)}
                                 
-                                {else if !isset($user_id)}
-                               
-                                {else}
-                                <li><a href="/logout.php" class="glitch-link" data-text="Личный кабинет">Выйти</a></li>
-                                {/if}
-                                <li><a href="/participants/" class="glitch-link" data-text="Участники">Участники</a></li>
-
-                                <!-- <li><a href="#" class="glitch-link" data-text="Участники">Участники</a></li>
-                                <li><a href="#" class="glitch-link" data-text="Обои">Обои</a></li>
-                                <li><a href="#" class="glitch-link" data-text="мерч">мерч</a></li> -->
                             </ul>
                         </nav>
                     </div>
@@ -106,14 +94,14 @@
             <div class="main-block fadeInUp wow" data-wow-delay="0.2s">
                 <div class="wrap-news-preview">
                     {foreach from=$main_news item=main_new}
-                        <div class="news-preview">
-                            <div class="news-preview-bg">
-                                <img src="{$main_new.photo}" alt="news" />
-                            </div>
-                            <div class="news-preview-btn">
-                                <a href="{$main_new.link}" class="glitch-link" data-text="{$main_new.title}">{$main_new.title}</a>
-                            </div>
+                    <div class="news-preview">
+                        <div class="news-preview-bg">
+                            <img src="{$main_new.photo}" alt="news" />
                         </div>
+                        <div class="news-preview-btn">
+                            <a href="{$main_new.link}" class="glitch-link" data-text="{$main_new.title}">{$main_new.title}</a>
+                        </div>
+                    </div>
                     {/foreach}
                 </div>
                 <div class="video-main">
@@ -154,97 +142,27 @@
             </div>
 
             
-              <div class="title-block fadeInUp wow" data-wow-delay="0.2s">
+            <div class="title-block fadeInUp wow" data-wow-delay="0.2s">
                 <h2 data-text="Новости">
                     Новости
                 </h2>
             </div>
 
             <div class="wrap-news fadeInUp wow" data-wow-delay="0.2s">
+                {foreach from=$news item=new}
 
-                 <a href="/news_7.html"  class="news-block">
+                <a href="{$new.link}"  class="news-block">
                     <span class="news-block-bg">
-                        <img src="img/news/bun_3.png" alt="" />
+                        <img src="{$new.photo}" alt="" />
                     </span>
                     <span class="news-block-txt">
                         <span class="center-news-block-txt">
-                            Регистрация на пятый сезон Pit Bull battle  продлена до 8 июля!
+                            {$new.title}
                         </span>
                     </span>
                 </a>
+                {/foreach}
 
-                 <a href="https://www.instagram.com/pitbull_battle/" target="_blank" class="news-block">
-                    <span class="news-block-bg">
-                        <img src="img/news/38.png" alt="" />
-                    </span>
-                    <span class="news-block-txt">
-                        <span class="center-news-block-txt">
-                            ЛСП в Одессе, розыгрыш билетов
-                        </span>
-                    </span>
-                </a>
-
-                 <a href="https://www.instagram.com/pitbull_battle/" target="_blank" class="news-block">
-                    <span class="news-block-bg">
-                        <img src="img/news/37.png" alt="" />
-                    </span>
-                    <span class="news-block-txt">
-                        <span class="center-news-block-txt">
-                            Розыгрыш 2х билетов на концерт ATL
-                        </span>
-                    </span>
-                </a>
-
-                <a href="news_1.html" class="news-block">
-                    <span class="news-block-bg">
-                        <img src="img/news/34745520_1593659040731596_5165973495259070464_n-2.jpg" alt="" />
-                    </span>
-                    <span class="news-block-txt">
-                        <span class="center-news-block-txt">
-                            Три раунда Da Gudda Jazz в Mp3
-                        </span>
-                    </span>
-                </a>
-                <a href="news_2.html" class="news-block">
-                    <span class="news-block-bg">
-                        <img src="img/news/34745520_1593659040731596_5165973495259070464_n-2.png" alt="" />
-                    </span>
-                    <span class="news-block-txt">
-                        <span class="center-news-block-txt">
-                            Da Gudda jazz vs Codekiev
-                        </span>
-                    </span>
-                </a>
-                <a href="/news_6.html"  class="news-block">
-                    <span class="news-block-bg">
-                        <img src="img/news/bun_1.png" alt="" />
-                    </span>
-                    <span class="news-block-txt">
-                        <span class="center-news-block-txt">
-                            Открыт раздел с участниками
-                        </span>
-                    </span>
-                </a>
-                <a href="news_3.html" class="news-block">
-                    <span class="news-block-bg">
-                        <img src="img/news/4.png" alt="" />
-                    </span>
-                    <span class="news-block-txt">
-                        <span class="center-news-block-txt">
-                            Новый вкус Pit Bull Energy, еще больше рэпа
-                        </span>
-                    </span>
-                </a>
-                <a href="news_4.html" class="news-block">
-                    <span class="news-block-bg">
-                        <img src="img/news/5.png" alt="" />
-                    </span>
-                    <span class="news-block-txt">
-                        <span class="center-news-block-txt">
-                            Михалыч vs Marty
-                        </span>
-                    </span>
-                </a>
                <!--  <a href="https://concert.ua/ru/eventpage/atl-odessa" target="_blank" class="news-block">
                     <span class="news-block-bg">
                         <img src="img/news/ATL.png" alt="" />
@@ -276,7 +194,7 @@
                     </span>
                 </a> -->
             </div>
-            <!-- <a href="#" class="scroll-down"></a>
+         <!--    <a href="#" class="scroll-down"></a>
 
             <div class="title-block fadeInUp wow" data-wow-delay="0.2s">
                 <h2 data-text="Новости">
@@ -297,11 +215,11 @@
                         </span>
                     </span>
                 </a>
-            </div>
+            </div> -->
 
             <div class="center-btn fadeInUp wow" data-wow-delay="0.2s">
-                <a href="#" class="show-more"><span class="glitch-link" data-text="больше новостей">больше новостей</span></a>
-            </div> -->
+                <a href="/news/" class="show-more"><span class="glitch-link" data-text="больше новостей">больше новостей</span></a>
+            </div>
 
             <div class="footer fadeInUp wow" data-wow-delay="0.2s">
 
@@ -329,10 +247,7 @@
     </div>
     <div class="b-popup" id="popup1" style="display: none;">
         <div class="b-popup-content">
-          Выберите способ авторизации
-          <a href=" https://www.facebook.com/v2.4/dialog/oauth?client_id=1689430901150785&response_type=code&sdk=php-sdk-5.6.2&redirect_uri=https://pit-battle.com/auth.php"><img src="/public/img/fb_auth.png" /></a>
-          <br>
-          <a href="https://oauth.vk.com/authorize?client_id=5965601&redirect_uri=https://pit-battle.com/vk_oauth.php&response_type=code"><img src="/public/img/vk_auth.png" /></a>
+          Регистрация окончена
       </div>
   </div>
 
@@ -359,7 +274,7 @@
     }
 });
  $(document).ready(function(){
- $("#popup1").hide();
+     $("#popup1").hide();
  });
 </script>
 

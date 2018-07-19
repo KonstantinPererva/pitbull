@@ -75,30 +75,18 @@
                         <button class="close-nav"></button>
                        <nav>
                             <ul>
-                                <li><a href="/" class="glitch-link" data-text="Главная">Главная</a></li>
+                                 <li ><a href="/" class="glitch-link" data-text="Главная">Главная</a></li>
                                 <!-- <li><a href="#" class="glitch-link" data-text="лучшие панчи">лучшие панчи</a></li>-->
-                                <li class="active"><a href="/about/" class="glitch-link" data-text="про pit bull battle">про pit bull battle</a></li>
-                                <li><a href="/rools/" class="glitch-link" data-text="правила">правила</a></li>
-                                <li><a href="/judges.html" class="glitch-link" data-text="Судьи">Судьи</a></li>
-                                {if !isset($social_id)}
-                                <li><a href="javascript:PopUpShow();" class="glitch-link" data-text="Регистрация">Регистрация</a></li>
-                                {else if !isset($user_id)}
-                                <li><a href="/registration/" class="glitch-link" data-text="Регистрация">Регистрация</a></li>
+                                <li {if $smarty.request.p1=='/about/'} class="active" {/if}><a href="/about/" class="glitch-link" data-text="про pit bull battle">про pit bull battle</a></li>
+                                <li {if $smarty.request.p1=='/rools/'} class="active" {/if}><a href="/rools/" class="glitch-link" data-text="правила">правила</a></li>
+                                <li {if $smarty.request.p1=='/judges/'} class="active" {/if}><a href="/judges/" class="glitch-link" data-text="Судьи">Судьи</a></li>
+                                <li {if $smarty.request.p1=='/members-otbor2/'} class="active" {/if}><a href="/members-otbor2/" class="glitch-link" data-text="Участники">Участники</a></li>
+                                {if !isset($u_id) || $u_id==''}
+                                <li {if $smarty.request.p1=='/auth/'} class="active"{/if}><a href="/auth/" class="glitch-link" data-text="Авторизация">Авторизация</a></li>
                                 {else}
-                                <li><a href="/profile/" class="glitch-link" data-text="Личный кабинет">Личный кабинет</a></li>
+                                <li {if $smarty.request.p1=='/profile/'} class="active" {/if}><a href="/profile/" class="glitch-link" data-text="Кабинет участника">Кабинет участника</a></li>
+                                <li  class="active"><a href="/logout.php" class="glitch-link" data-text="Выйти">Выйти</a></li>
                                 {/if}
-
-                                {if !isset($social_id)}
-                                
-                                {else if !isset($user_id)}
-                               
-                                {else}
-                                <li><a href="/logout.php" class="glitch-link" data-text="Личный кабинет">Выйти</a></li>
-                                {/if}
-                                <li><a href="/participants/" class="glitch-link" data-text="Участники">Участники</a></li>
-                                <!-- <li><a href="#" class="glitch-link" data-text="Участники">Участники</a></li>
-                                <li><a href="#" class="glitch-link" data-text="Обои">Обои</a></li>
-                                <li><a href="#" class="glitch-link" data-text="мерч">мерч</a></li> -->
                             </ul>
                         </nav>
                     </div>

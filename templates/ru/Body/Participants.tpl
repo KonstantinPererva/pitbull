@@ -81,9 +81,9 @@
                                 <li><a href="/rools/" class="glitch-link" data-text="правила">правила</a></li>
                                 <li><a href="/judges.html" class="glitch-link" data-text="Судьи">Судьи</a></li>
                                 {if !isset($social_id)}
-                                <li><a href="javascript:PopUpShow();" class="glitch-link" data-text="Регистрация">Регистрация</a></li>
+                                <!-- <li><a href="javascript:PopUpShow();" class="glitch-link" data-text="Регистрация">Регистрация</a></li> -->
                                 {else if !isset($user_id)}
-                                <li><a href="/registration/" class="glitch-link" data-text="Регистрация">Регистрация</a></li>
+                                <!-- <li><a href="/registration/" class="glitch-link" data-text="Регистрация">Регистрация</a></li> -->
                                 {else}
                                 <li><a href="/profile/" class="glitch-link" data-text="Личный кабинет">Личный кабинет</a></li>
                                 {/if}

@@ -2145,7 +2145,7 @@ h3 span{
     margin-top: -30px;
     padding-left: 540px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     color: #ff3644;
     text-transform: uppercase;
 }
@@ -2253,7 +2253,7 @@ h3 span{
 .check-in .swiper-button-prev,
 .check-in .swiper-button-next{
     position: relative;
-    top: 0;
+    top: 0px;
     margin: 0 30px;
     background: none;
     -moz-background-size: cover;
@@ -3066,23 +3066,24 @@ h3 span{
     overflow:hidden;
     position:fixed;
     top:0px;
+     left: 0px;
 }
 .b-popup .b-popup-content{
-    margin:150px auto 0px auto;
+    margin:100px auto 0px auto;
     width:500px;
     height: 300px;
     padding:50px 20px 0px 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: #EEAD0E;
 font-size: 19pt;
 font-weight: bold;
-    color:  #EEAD0E;
+    color: black ;
     border-radius:5px;
     box-shadow: 0px 0px 10px #000;
 }
 .b-popup .b-popup-content a{
  
-   color:  #EEAD0E;
+   color:  black;
 padding-top: 30px;
 font-size: 21pt;
 }
@@ -3320,32 +3321,35 @@ font-size: 21pt;
     }
 
     .b-popup{
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
-    top:0px;
-}
+        width:100%;
+        min-height:100%;
+        background-color: rgba(0,0,0,0.5);
+        overflow:hidden;
+        position:fixed;
+        top:0px;
+        left: 0px;
+        z-index: 999;
+    }
     .b-popup .b-popup-content{
-    margin:150px auto 0px auto;
-    width:300px;
-    height: 200px;
-    padding:30px 20px 0px 20px;
-    text-align: center;
-    background-color: #fff;
-font-size: 11pt;
-font-weight: bold;
-    color:  #EEAD0E;
-    border-radius:5px;
-    box-shadow: 0px 0px 10px #000;
-}
+        margin:100px auto;
+        width:80%;
+        height: 300px;
+      
+        text-align: center;
+        background-color: #EEAD0E;
+        font-size: 11pt;
+        font-weight: bold;
+        color:  black;
+        border-radius:5px;
+        box-shadow: 0px 0px 10px #000;
+
+    }
     .b-popup .b-popup-content a{
- 
-   color:  #EEAD0E;
-padding-top: 20px;
-font-size: 14pt;
-}
+
+     color:  black;
+     padding-top: 20px;
+     font-size: 14pt;
+ }
     .container{
         padding: 0 10px;
     }
@@ -3497,7 +3501,7 @@ font-size: 14pt;
         font-size: 14px;
     }
     .error-txt-input {
-        font-size: 14px;
+        font-size: 9px;
     }
     .next-check-in-step span {
         width: 140px;

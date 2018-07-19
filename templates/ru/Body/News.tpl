@@ -23,34 +23,35 @@
 
 <div class="wrapper">
     <div class="container">
-        <div class="header fadeInUp wow animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-            <a href="/" class="logo">
-                <img src="/public/img/logo.png" alt="">
-            </a>
-            <div class="wrap-nav">
-                <button class="open-nav"><i class="fas fa-align-right"></i></button>
-                <div class="block-nav">
-                    <button class="close-nav"></button>
-                    <nav>
-                        <ul>
-                            <li class="active"><a href="/" class="glitch-link" data-text="Главная">Главная</a></li>
-                            <!-- <li><a href="#" class="glitch-link" data-text="лучшие панчи">лучшие панчи</a></li>-->
-                            <li><a href="/about/" class="glitch-link" data-text="про pit bull battle">про pit bull battle</a></li>
-                            <li><a href="/rools/" class="glitch-link" data-text="правила">правила</a></li>
-                            <li><a href="/judges.html" class="glitch-link" data-text="Судьи">Судьи</a></li>
-                            <li><a href="javascript:PopUpShow();" class="glitch-link" data-text="Регистрация">Регистрация</a></li>
+      
+                <div class="header fadeInUp wow" data-wow-delay="0.2s">
 
-
-                            <li><a href="/participants/" class="glitch-link" data-text="Участники">Участники</a></li>
-
-                            <!-- <li><a href="#" class="glitch-link" data-text="Участники">Участники</a></li>
-                            <li><a href="#" class="glitch-link" data-text="Обои">Обои</a></li>
-                            <li><a href="#" class="glitch-link" data-text="мерч">мерч</a></li> -->
-                        </ul>
-                    </nav>
+                    <a href="/" class="logo">
+                        <img src="/public/img/logo.png" alt="" />
+                    </a>
+                    <div class="wrap-nav">
+                        <button class="open-nav"><i class="fas fa-align-right"></i></button>
+                        <div class="block-nav">
+                            <button class="close-nav"></button>
+                            <nav>
+                                <li ><a href="/" class="glitch-link" data-text="Главная">Главная</a></li>
+                                <!-- <li><a href="#" class="glitch-link" data-text="лучшие панчи">лучшие панчи</a></li>-->
+                                <li {if $smarty.request.p1=='/about/'} class="active" {/if}><a href="/about/" class="glitch-link" data-text="про pit bull battle">про pit bull battle</a></li>
+                                <li {if $smarty.request.p1=='/rools/'} class="active" {/if}><a href="/rools/" class="glitch-link" data-text="правила">правила</a></li>
+                                <li {if $smarty.request.p1=='/judges/'} class="active" {/if}><a href="/judges/" class="glitch-link" data-text="Судьи">Судьи</a></li>
+                                <li {if $smarty.request.p1=='/members-otbor2/'} class="active" {/if}><a href="/members-otbor2/" class="glitch-link" data-text="Участники">Участники</a></li>
+                                {if !isset($u_id) || $u_id==''}
+                                <li {if $smarty.request.p1=='/auth/'} class="active"{/if}><a href="/auth/" class="glitch-link" data-text="Авторизация">Авторизация</a></li>
+                                {else}
+                                <li {if $smarty.request.p1=='/profile/'} class="active" {/if}><a href="/profile/" class="glitch-link" data-text="Кабинет участника">Кабинет участника</a></li>
+                                <li  class="active"><a href="/logout.php" class="glitch-link" data-text="Выйти">Выйти</a></li>
+                                {/if}
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
+
             </div>
-        </div>
 
         <div class="wrapper-slider-news">
             <div class="wrap-stories wrap-stories-main fadeInUp wow animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
@@ -68,18 +69,20 @@
             </div>
             <div class="swiper-container swiper-stories swiper-container-horizontal swiper-container-wp8-horizontal">
                 <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                     {foreach from=$videos item=video}
                     <div class="swiper-slide swiper-slide-active" style="width: 163.5px;">
-                        <a href="https://www.youtube.com/watch?v=qDy-Min27VE" target="_blank" class="stories-item">
+                        <a href="{$video.video}" target="_blank" class="stories-item">
                                 <span class="stories-item-preview">
                                     <span class="stories-item-img">
                                         <i class="fas fa-play"></i>
-                                        <img src="/i/video/119/pngmayti.png" alt="news">
+                                        <img src="{$video.photo}" alt="news">
                                     </span>
                                 </span>
-                            <span class="stories-item-title">Майти Ди vs Giga1</span>
+                            <span class="stories-item-title">{$video.title}</span>
                         </a>
                     </div>
-                    <div class="swiper-slide swiper-slide-next" style="width: 163.5px;">
+                    {/foreach}
+                   <!--  <div class="swiper-slide swiper-slide-next" style="width: 163.5px;">
                         <a href="https://www.youtube.com/watch?v=wqYots_Pmy8" target="_blank" class="stories-item">
                                 <span class="stories-item-preview">
                                     <span class="stories-item-img">
@@ -144,7 +147,7 @@
                                 </span>
                             <span class="stories-item-title">Pit Bull Battle – Kyivstoner 2018</span>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -158,18 +161,19 @@
 
 
         <div class="wrap-news fadeInUp wow" data-wow-delay="0.2s">
-                <a href="/news_7.html"  class="news-block">
+             {foreach from=$news item=new}
+                <a href="{$new.link}"  class="news-block">
                     <span class="news-block-bg">
-                        <img src="/img/news/bun_3.png" alt="new" />
+                        <img src="{$new.photo}" alt="new" />
                     </span>
                     <span class="news-block-txt">
                         <span class="center-news-block-txt">
-                            Регистрация на пятый сезон Pit Bull battle  продлена до 8 июля!
+                        {$new.title}
                         </span>
                     </span>
                 </a>
-
-                <a href="https://www.instagram.com/pitbull_battle/" target="_blank" class="news-block">
+{/foreach}
+                <!-- <a href="https://www.instagram.com/pitbull_battle/" target="_blank" class="news-block">
                     <span class="news-block-bg">
                         <img src="/img/news/38.png" alt="new" />
                     </span>
@@ -244,7 +248,7 @@
                             Михалыч vs Marty
                         </span>
                     </span>
-                </a>
+                </a> -->
             </div>
 
         <div class="button-more-news">
@@ -260,27 +264,26 @@
                 </svg>
             </a>
         </div>
+ <div class="footer fadeInUp wow" data-wow-delay="0.2s">
 
-        <div class="footer fadeInUp wow" data-wow-delay="0.2s">
-
-            <a href="mailto:support@pit-battle.com" class="mail-support glitch-link" data-text="support@pit-battle.com">support@pit-battle.com</a>
-
-            <div class="right-ftr">
-                <div class="soc">
-                    <a href="https://www.instagram.com/pitbull_battle" target="_blank" class="fab fa-instagram"></a>
-                    <a href="https://www.facebook.com/pitbulldrink" target="_blank" class="fab fa-facebook-f"></a>
-                    <a href="https://www.youtube.com/channel/UCs2phFvcrCe49aGtD5eXaEg" target="_blank" class="fab fa-youtube"></a>
-                    <a href="https://soundcloud.com/pit_bull_battle" target="_blank" class="fab fa-soundcloud"></a>
-                    <a href="https://vk.com/pitbull_energy" target="_blank" class="fab fa-vk"></a>
-                    <a href="https://t.me/Pitbullbattle" target="_blank" class="fab fa-telegram-plane"></a>
+                <a href="mailto:support@pit-battle.com" class="mail-support glitch-link" data-text="support@pit-battle.com">support@pit-battle.com</a>
+                
+                <div class="right-ftr">
+                    <div class="soc">
+                        <a href="https://www.instagram.com/pitbull_battle" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://www.facebook.com/pitbulldrink" target="_blank" class="fab fa-facebook-f"></a>
+                        <a href="https://www.youtube.com/channel/UCs2phFvcrCe49aGtD5eXaEg" target="_blank" class="fab fa-youtube"></a>
+                        <a href="https://soundcloud.com/pit_bull_battle" target="_blank" class="fab fa-soundcloud"></a>
+                        <a href="https://vk.com/pitbull_energy" target="_blank" class="fab fa-vk"></a>
+                        <a href="https://t.me/Pitbullbattle" target="_blank" class="fab fa-telegram-plane"></a>
+                    </div>
+                    <div class="logo-ftr">
+                        <a href="http://oddeeagency.com" target="_blank"><img src="img/logo-1.png" alt="" /></a>
+                        <a href="http://www.pit-bull.ua/" target="_blank"><img src="img/logo-2.png" alt="" /></a>
+                    </div>
                 </div>
-                <div class="logo-ftr">
-                    <a href="http://oddeeagency.com" target="_blank"><img src="/img/logo-1.png" alt="news" /></a>
-                    <a href="http://www.pit-bull.ua/" target="_blank"><img src="/img/logo-2.png" alt="news" /></a>
-                </div>
+
             </div>
-
-        </div>
     </div>
 </div>
 
