@@ -10,15 +10,12 @@
     <link href="/public/css/style.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-
     <meta name="description" content="Возможность заявить о себе, в стремлении стать лучшим и справедливо заработать первый гонорар." />    
     <meta property="og:url"           content="https://pit-battle.com/" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Pit Bull Battle | V сезон" />
     <meta property="og:description"   content="Возможность заявить о себе, в стремлении стать лучшим и справедливо заработать первый гонорар." />
     <meta property="og:image"         content="https://pit-battle.com/1200.png" />
-
-
     {literal}
     <!-- Facebook Pixel Code -->
     <script>
@@ -46,32 +43,23 @@
 
 </head>
 <body>
-
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0&appId=1689430901150785&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSJP4H"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
+    <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0&appId=1689430901150785&autoLogAppEvents=1'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSJP4H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div class="wrapper">
         <div class="container">
-
             <div class="header fadeInUp wow" data-wow-delay="0.2s">
-
                 <a href="/" target="_blank" class="logo">
                     <img src="/public/img/logo.png" alt="" />
                 </a>
+
                 <div class="wrap-nav">
                     <button class="open-nav"><i class="fas fa-align-right"></i></button>
                     <div class="block-nav">
                         <button class="close-nav"></button>
+
                         <nav>
                             <ul>
                               <li ><a href="/" class="glitch-link" data-text="Главная">Главная</a></li>
@@ -90,8 +78,8 @@
                       </nav>
                   </div>
               </div>
-
           </div>
+
           <div class="wrap-stories wrap-stories-main fadeInUp wow" data-wow-delay="0.2s">
             <div class="swiper-stories-arrow">
                 <div class="swiper-stories-arrow__prev">
@@ -99,12 +87,14 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M43.0758 0.00124492C42.3445 0.0230268 41.6504 0.33426 41.1404 0.869043L0.823957 41.9361C0.29638 42.4742 -6.45117e-07 43.2039 -6.45117e-07 43.9647C-6.45117e-07 44.7255 0.29638 45.4552 0.823957 45.9932L41.1404 87.1009C41.3988 87.38 41.7094 87.6034 42.0539 87.7579C42.3984 87.9124 42.7698 87.9948 43.1461 88.0003C43.5224 88.0059 43.896 87.9344 44.2447 87.7901C44.5935 87.6458 44.9103 87.4317 45.1764 87.1604C45.4425 86.889 45.6526 86.566 45.7941 86.2104C45.9356 85.8548 46.0057 85.4739 46.0003 85.0902C45.9949 84.7065 45.914 84.3278 45.7625 83.9765C45.611 83.6253 45.3919 83.3085 45.1183 83.0451L6.79191 43.9666L45.1183 4.92751C45.5251 4.52472 45.8031 4.00596 45.9158 3.43929C46.0285 2.87263 45.9706 2.28448 45.7498 1.75192C45.529 1.21935 45.1556 0.76726 44.6784 0.454858C44.2012 0.142456 43.6426 -0.0156585 43.0758 0.00124492V0.00124492Z" transform="translate(-0.000305176 0.499878)" fill="#FFAA4D"/>
                     </svg>
                 </div>
+
                 <div class="swiper-stories-arrow__next">
                     <svg width="20" height="40" viewBox="0 0 46 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.3 81.9C2.5 81.9 1.8 81.6 1.2 81C1.43051e-06 79.8 1.43051e-06 77.9 1.2 76.8L36.9 41.1L0.899998 5.1C-0.300002 3.9 -0.300002 2 0.899998 0.9C2.1 -0.3 4 -0.3 5.1 0.9L45.3 41.1L5.5 81C4.9 81.6 4.1 81.9 3.3 81.9Z" transform="translate(0.200012 0.799988)" fill="#FFAA4D"/>
                     </svg>
                 </div>
             </div>
+
             <div class="swiper-container swiper-stories">
                 <div class="swiper-wrapper">
                     {foreach from=$videos item=video}
@@ -113,9 +103,11 @@
                             <span class="stories-item-preview">
                                 <span class="stories-item-img">
                                     <i class="fas fa-play"></i>
+
                                     <img src="{$video.photo}" alt="" />
                                 </span>
                             </span>
+
                             <span class="stories-item-title">{$video.title}</span>
                         </a>
                     </div>
@@ -124,17 +116,17 @@
             </div>
         </div>
 
-
-
-
         <div class="user-profile fadeInUp wow" data-wow-delay="0.2s">
             <div class="user-profile-item">
                 <div class="user-profile-img">
                     <img src="{$member.img}" alt="" />
                 </div>
+
                 <div class="user-profile-txt">
                     <h5>{$member.nickname}</h5>
+
                     <p>{$member.description}</p>
+
                     <div class="soc-user">
                         {if isset($member.facebook) && $member.facebook!=""}
                         <a href="{$member.facebook}" class="fab fa-facebook-f"></a>
@@ -152,7 +144,7 @@
                             <div class="fb-share-button" data-href="https://pit-battle.com/" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpit-battle.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Поделиться</a></div>
                             <script>
                                 function openWin2() {
-                                    myWin=open("http://www.facebook.com/sharer.php?u=https://pit-battle.com/participant/?id"+{$member.id}+"&nomination="+,"displayWindow","width=520,height=300,left=350,top=170,status=no,toolbar=no,menubar=no");
+                                    myWin=open("http://www.facebook.com/sharer.php?u=https://pit-battle.com/participant/?id" + {$member.id} + "&nomination=" + "," + "displayWindow" + "," + "width=520,height=300,left=350,top=170,status=no,toolbar=no,menubar=no");
                                 }
                             </script>
 
@@ -162,36 +154,48 @@
                         {else}
                         <!-- <a href="javascript:void()" data-user_id={$member.id} class="vote-btn vote"><span class="glitch-link" data-text="голосовать">голосовать</span></a> -->
                         {/if}
-                    </div>
+
                 </div>
-                {if $track1!=''}
-                <div style="margin-bottom: 20px;"><h5>Раунд 1</h5>
+            </div>
+            {if $track1!=''}
+            <div style="margin-bottom: 20px;">
+                <h5>
+                    <span>Раунд 1</span>
+                    <span class="button-rating">
+                        <span class="button-rating__text">Оценки</span>
+                    </span>
+                </h5>
+                <audio style="width: 100%" align="center" controls="controls">
+                    <source src="{$track1}">
+                       <br><br>
+                   </audio></div>
+                   {/if}
+                   {if $track2!=''}
+                   <div style="margin-bottom: 20px;">
+                    <h5>
+                        <span>Раунд 2</span>
+                        <span class="button-rating">
+                        <span class="button-rating__text">Оценки</span>
+                    </span>
+                    </h5>
                     <audio style="width: 100%" align="center" controls="controls">
-                        <source src="{$track1}">
-                           <br><br>
-                       </audio></div>
-                       {/if}
-                       {if $track2!=''}
-                       <div style="margin-bottom: 20px;">
-                        <h5>Раунд 2</h5>
-                        <audio style="width: 100%" align="center" controls="controls">
-                            <source src="{$track2}">
-                            </audio>
-                        </div>
-                        {/if}
-                        <br/>
-                        {if isset($member.video) && $member.video!=""}
-                        <br><br>
-                        <div class="media-user">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/{$member.video}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        {/if}
-                        <br/>
-                        {if isset($member.soundcloud) && $member.soundcloud!=""}
-                        <div class="media-user">
-                            {$member.soundcloud}
-                        </div>
-                        {/if}
+                        <source src="{$track2}">
+                        </audio>
+                    </div>
+                    {/if}
+                    <br/>
+                    {if isset($member.video) && $member.video!=""}
+                    <br><br>
+                    <div class="media-user">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/{$member.video}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    {/if}
+                    <br/>
+                    {if isset($member.soundcloud) && $member.soundcloud!=""}
+                    <div class="media-user">
+                        {$member.soundcloud}
+                    </div>
+                    {/if}
                 <!-- <div class="nav-user-round">
                     <a href="#" class="glitch-link" data-text="предыдущий раунд">предыдущий раунд</a>
                     <hr>
@@ -254,12 +258,98 @@
 </div>
 </div>
 
+<!-- popup-user-rating -->
+    <div class="popup">
+        <div class="popup__inner">
+            <span class="popup__substrate"></span>
+            <div class="popup-rating">
+                <div class="popup-rating__hold">
+                    <div class="popup-rating-header">
+                        <div class="popup-rating-header__close">
+                            <div class="popup-rating-close">
+                                <svg class="popup-rating-close__ico" width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="37.5" cy="36" rx="37.5" ry="36" transform="translate(13 14)" fill="white"/>
+                                    <path d="M75.756 33.593L66.404 24.245L49.999 40.649L33.593 24.245L24.242 33.593L40.648 49.998L24.242 66.404L33.593 75.755L49.999 59.35L66.404 75.755L75.756 66.404L59.35 49.998L75.756 33.593ZM49.999 100C22.384 100 0 77.613 0 49.998C0 22.387 22.384 0 49.999 0C77.614 0 99.997 22.387 99.997 49.998C99.997 77.613 77.614 100 49.999 100Z" fill="#303030"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-rating-body">
+                        <ul class="popup-rating-list">
+                            <li class="popup-rating-list__item">
+                                <div class="valuer-card">
+                                    <div class="valuer-card__wrap-img">
+                                        <img class="valuer-card__img" src="/img/j/image5.png" alt="valuer">
+                                    </div>
+                                    <div class="valuer-card__text">
+                                        <div class="valuer-card-title">
+                                            <span class="valuer-card-title__text">Миша МРК</span>
+                                        </div>
+                                        <div class="valuer-card-description">
+                                            <p class="valuer-card-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur et, ex fugit ipsum molestias natus necessitatibus nostrum optio provident quasi quia quos soluta vero voluptatibus? Aspernatur, delectus deserunt dolores est exercitationem fugit impedit inventore magnam nemo nobis odio perspiciatis quasi quia quidem quod similique unde. Illum iusto quia repellat!</p>
+                                        </div>
+                                    </div>
+                                    <div class="valuer-card__rating">
+                                        <div class="valuer-card-rating">
+                                            <span class="valuer-card-rating__num">7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="popup-rating-list__item">
+                                <div class="valuer-card">
+                                    <div class="valuer-card__wrap-img">
+                                        <img src="/img/j/image5.png" alt="valuer">
+                                    </div>
+                                    <div class="valuer-card__text">
+                                        <div class="valuer-card-title">
+                                            <span class="valuer-card-title__text">Миша МРК</span>
+                                        </div>
+                                        <div class="valuer-card-description">
+                                            <p class="valuer-card-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur et, ex fugit ipsum molestias natus necessitatibus nostrum optio provident quasi quia quos soluta vero voluptatibus? Aspernatur, delectus deserunt dolores est exercitationem fugit impedit inventore magnam nemo nobis odio perspiciatis quasi quia quidem quod similique unde. Illum iusto quia repellat!</p>
+                                        </div>
+                                    </div>
+                                    <div class="valuer-card__rating">
+                                        <div class="valuer-card-rating">
+                                            <span class="valuer-card-rating__num">7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="popup-rating-list__item">
+                                <div class="valuer-card">
+                                    <div class="valuer-card__wrap-img">
+                                        <img src="/img/j/image5.png" alt="valuer">
+                                    </div>
+                                    <div class="valuer-card__text">
+                                        <div class="valuer-card-title">
+                                            <span class="valuer-card-title__text">Миша МРК</span>
+                                        </div>
+                                        <div class="valuer-card-description">
+                                            <p class="valuer-card-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur et, ex fugit ipsum molestias natus necessitatibus nostrum optio provident quasi quia quos soluta vero voluptatibus? Aspernatur, delectus deserunt dolores est exercitationem fugit impedit inventore magnam nemo nobis odio perspiciatis quasi quia quidem quod similique unde. Illum iusto quia repellat!</p>
+                                        </div>
+                                    </div>
+                                    <div class="valuer-card__rating">
+                                        <div class="valuer-card-rating">
+                                            <span class="valuer-card-rating__num">7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="/public/js/script.js"></script>
 <script src="/public/js/fancybox.min.js"></script>
 <script src="/public/js/swiper.min.js"></script>
 <script src="/public/js/mgGlitch.min.js"></script>
 <script src="/public/js/wow.min.js"></script>
+
 <script type="text/javascript">
    $(document).mouseup(function (e) {
     var container = $("#popup2");
@@ -298,7 +388,6 @@
         },
     });
   });
-
 
 </script>
 

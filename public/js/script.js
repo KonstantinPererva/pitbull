@@ -91,4 +91,18 @@ $(document).ready(function(){
         $("#filename-track").val(filenametrack);
     });
 
+    $('.button-rating').click(function () {
+        $('.popup').show();
+        $('body').addClass('fixed-field');
+    });
+
+    $('.popup-rating-close__ico').click(function () {
+        $('.popup').hide();
+        $('body').removeClass('fixed-field');
+    });
+
+    $('.popup__substrate').click(function () {
+        $('.popup').hide();
+        $('body').removeClass('fixed-field');
+    });
 });
