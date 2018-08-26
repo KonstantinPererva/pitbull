@@ -91,11 +91,13 @@ $(document).ready(function(){
         $("#filename-track").val(filenametrack);
     });
 
+    // popup show
     $('.button-rating').click(function () {
         $('.popup').show();
         $('body').addClass('fixed-field');
     });
 
+    // popup hide
     $('.popup-rating-close__ico').click(function () {
         $('.popup').hide();
         $('body').removeClass('fixed-field');
